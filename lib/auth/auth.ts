@@ -38,6 +38,7 @@ export const auth = betterAuth({
     }
 });
 
+
 export const getSession = async () => {
     const result = await auth.api.getSession({
         headers: await headers(),
